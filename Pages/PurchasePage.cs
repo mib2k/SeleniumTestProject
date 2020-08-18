@@ -6,6 +6,6 @@ namespace SeleniumTestProject
 {
     public class PurchasePage : BasePage
     {
-        public PurchasePage(IWebDriver driver) : base(driver) { }
+        public PurchasePage() : base(){ }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
+using SeleniumTestProject.Tests;
 using System;
 
 namespace SeleniumTestProject.Pages
@@ -8,7 +9,7 @@ namespace SeleniumTestProject.Pages
     public class PassengerInfoPage : BasePage
     {
 
-        public PassengerInfoPage(IWebDriver driver) : base(driver) { }
+        public PassengerInfoPage() : base() { }
 
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_paxinfo_title']")]
         public IWebElement _paxTitleSelect;
@@ -17,8 +18,10 @@ namespace SeleniumTestProject.Pages
         {
             get
             {
+                WebDriverManager.WaitForVisible(5, _paxTitleSelect);
                 return new SelectElement(_paxTitleSelect);
             }
+            private set { }
         }
 
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_paxinfo_first_name']")]

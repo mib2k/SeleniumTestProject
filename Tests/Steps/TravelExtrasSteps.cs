@@ -13,12 +13,12 @@ namespace SeleniumTestProject.Tests.Steps
         TravelExtrasPage _travelExtrasPage;
         public TravelExtrasSteps() : base()
         {
-            _travelExtrasPage = new TravelExtrasPage(Driver);
+            _travelExtrasPage = new TravelExtrasPage();
         }
 
         public void ClickContinueBtn()
         {
-            new WebDriverWait(Driver, TimeSpan.FromSeconds(30)).Until(d => _travelExtrasPage.ContinueBtn);
+            WaitForVisible(60, _travelExtrasPage.ContinueBtn);
             _travelExtrasPage.ContinueBtn.Click();
         }
     }

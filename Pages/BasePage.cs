@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 using SeleniumTestProject.Tests;
 using System;
@@ -15,6 +16,7 @@ namespace SeleniumTestProject.Pages
         protected BasePage()
         {
             PageFactory.InitElements(WebDriverManager.Driver, this);
+
         }
 
         protected BasePage(IWebDriver driver)

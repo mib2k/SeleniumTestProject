@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using SeleniumTestProject.Pages;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -16,14 +17,15 @@ namespace SeleniumTestProject.Tests.Steps
 
         public FlightSearchSteps() : base()
         {
-            _flightSearchPage = new FlightSearchPage(Driver);
+            _flightSearchPage = new FlightSearchPage();
         }
 
-        public void AssertFares() {
+        public void AssertFares()
+        {
             Assert.IsTrue(_flightSearchPage.FareRows.Count > 0, "No fares found");
         }
 
-        public PassengerInfoPage SelectFare(double? price = null)
+        public void SelectFare(double? price = null)
         {
             var FirstAvailableFare = _flightSearchPage.FareRows.First();
 
@@ -31,11 +33,15 @@ namespace SeleniumTestProject.Tests.Steps
             FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_category')]")).Click();
 
             //Selecting fare
-            FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_button_') and not(@disabled)]")).Click();
+            IWebElement fare = FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_button_') and not(@disabled)]"));
+            WaitForVisible(3, fare);
+            fare.Click();
 
             //Proceed to next page
-            _flightSearchPage.FlightSearchContainer.FindElement(By.XPath(".//*[@data-test-id='test_button_continue_fsr']")).Click();
-            return new PassengerInfoPage(Driver);
+            IWebElement continueBtn = _flightSearchPage.FlightSearchContainer.FindElement(By.XPath(".//*[@data-test-id='test_button_continue_fsr']"));
+            WaitForVisible(3, continueBtn);
+
+            continueBtn.Click();
         }
     }
 }

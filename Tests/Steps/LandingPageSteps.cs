@@ -21,7 +21,7 @@ namespace SeleniumTestProject.Tests.Steps
 
         public void AcceptCookiesAndLocation()
         {
-            new WebDriverWait(Driver, TimeSpan.FromSeconds(10)).Until(d => _landingPage.AcceptCookies.Displayed);
+            WaitForVisible(10, _landingPage.AcceptCookies);
             _landingPage.AcceptCookies.Click();
             _landingPage.ConfirmLocaleBtn.Click();
         }
@@ -56,10 +56,9 @@ namespace SeleniumTestProject.Tests.Steps
             }
         }
 
-        public FlightSearchPage Search()
+        public void Search()
         {
             _landingPage.SearchFlightsButton.Click();
-            return new FlightSearchPage(Driver);
         }
     }
 }

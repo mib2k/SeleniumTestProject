@@ -11,7 +11,7 @@ namespace SeleniumTestProject.Tests.Steps
         PurchasePage _purchasePage;
         public PurchaseSteps() : base()
         {
-            _purchasePage = new PurchasePage(Driver);
+            _purchasePage = new PurchasePage();
         }
     }
 }

@@ -11,11 +11,12 @@ namespace SeleniumTestProject.Tests.Steps
         private PassengerInfoPage _paxInfoPage;
         public PaxInfoSteps() : base()
         {
-            _paxInfoPage = new PassengerInfoPage(Driver);
+            _paxInfoPage = new PassengerInfoPage();
         }
 
-        public SeatSelectionPage FillPaxInfo()
-        {
+        public void FillPaxInfo()
+        { 
+            WebDriverManager.WaitForVisible(10, _paxInfoPage._paxTitleSelect);
             _paxInfoPage.PaxTitle.SelectByText("Miss");
             _paxInfoPage.FirstNameInput.SendKeys("Jane");
             _paxInfoPage.LastNameInput.SendKeys("Doe");
@@ -26,8 +27,7 @@ namespace SeleniumTestProject.Tests.Steps
             _paxInfoPage.AreaCodeInput.SendKeys("11");
             _paxInfoPage.LocalNumberInput.SendKeys("123123123");
 
-            _paxInfoPage.ContinueBtn.Click();
-            return new SeatSelectionPage(Driver);
+            _paxInfoPage.ContinueBtn.Click();            
         }
     }
 }

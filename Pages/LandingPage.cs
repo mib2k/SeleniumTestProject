@@ -11,8 +11,6 @@ namespace SeleniumTestProject.Pages
     class LandingPage : BasePage
     {
         public LandingPage() : base() { }
-        public LandingPage(IWebDriver driver) : base(driver) { }
-
 
         [FindsBy(How = How.Id, Using = "onetrust-accept-btn-handler")]
         public IWebElement AcceptCookies { get; private set; }

@@ -7,7 +7,7 @@ namespace SeleniumTestProject.Pages
 {
     public class FlightSearchPage : BasePage
     {
-        public FlightSearchPage(IWebDriver driver) : base(driver) { }
+        public FlightSearchPage() : base() { }
 
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_fsrp_content']")]
         public IWebElement FlightSearchContainer { get; private set; }

@@ -13,12 +13,13 @@ namespace SeleniumTestProject.Tests
         SeatSelectionPage _seatSelectionPage;
         public SeatSelectionSteps() : base()
         {
-            _seatSelectionPage = new SeatSelectionPage(Driver);
+            _seatSelectionPage = new SeatSelectionPage();
         }
 
         public void SkipSeatSelection()
         {
             _seatSelectionPage.SkipSeatSelectionBtn.Click();
+            _seatSelectionPage.ConfirmNoSeats.Click();
         }
     }
 }
