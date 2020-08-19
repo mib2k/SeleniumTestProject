@@ -3,15 +3,12 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 using System;
-using static SeleniumTestProject.Tests.WebDriverManager;
+using static SeleniumTestProject.Utils.WebDriverManager;
 
 namespace SeleniumTestProject.Pages
 {
     public class SeatSelectionPage : BasePage
     {
-        public SeatSelectionPage() : base() { }
-
-
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_btn_skip_seat_selection']")]
         public IWebElement SkipSeatSelectionBtn { get; private set; }
 
@@ -30,13 +27,6 @@ namespace SeleniumTestProject.Pages
 
                 return Driver.FindElement(confirmBtn);
             }
-
-            private set { }
         }
-
     }
-
-
-
-
 }

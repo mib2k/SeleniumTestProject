@@ -1,13 +1,7 @@
 using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.PageObjects;
-using SeleniumTestProject.Pages;
 using SeleniumTestProject.Tests;
 using SeleniumTestProject.Tests.Steps;
 using System;
-using System.Linq;
 
 namespace SeleniumTestProject
 {
@@ -31,7 +25,6 @@ namespace SeleniumTestProject
             paxInfo = new PaxInfoSteps();
             travelEssentialsSteps = new TravelEssentialsSteps();
             travelExtrasSteps = new TravelExtrasSteps();
-
         }
 
 

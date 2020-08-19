@@ -1,22 +1,14 @@
-﻿using OpenQA.Selenium;
+﻿using SeleniumTestProject.ElementExtensions;
 using SeleniumTestProject.Pages;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using static SeleniumTestProject.Tests.WebDriverManager;
 namespace SeleniumTestProject.Tests.Steps
 {
     class PaxInfoSteps : BaseSteps
     {
-        private PassengerInfoPage _paxInfoPage;
-        public PaxInfoSteps() : base()
-        {
-            _paxInfoPage = new PassengerInfoPage();
-        }
+        private PassengerInfoPage _paxInfoPage => new PassengerInfoPage();
 
         public void FillPaxInfo()
-        { 
-            WebDriverManager.WaitForVisible(10, _paxInfoPage._paxTitleSelect);
+        {
+            _paxInfoPage._paxTitleSelect.WaitForVisible(10);
             _paxInfoPage.PaxTitle.SelectByText("Miss");
             _paxInfoPage.FirstNameInput.SendKeys("Jane");
             _paxInfoPage.LastNameInput.SendKeys("Doe");
