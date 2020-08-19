@@ -1,14 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace SeleniumTestProject.Pages
 {
     public class FlightSearchPage : BasePage
     {
-        public FlightSearchPage() : base() { }
-
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_fsrp_content']")]
         public IWebElement FlightSearchContainer { get; private set; }
 

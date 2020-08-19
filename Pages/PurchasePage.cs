@@ -1,11 +1,8 @@
-﻿using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
-using SeleniumTestProject.Pages;
+﻿using SeleniumTestProject.Pages;
 
 namespace SeleniumTestProject
 {
     public class PurchasePage : BasePage
     {
-        public PurchasePage() : base(){ }
     }
 }

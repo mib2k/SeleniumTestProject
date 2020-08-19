@@ -1,24 +1,15 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
+using SeleniumTestProject.ElementExtensions;
 using SeleniumTestProject.Pages;
-using System;
 using System.Linq;
-using System.Text;
-
-using static SeleniumTestProject.Tests.WebDriverManager;
 
 namespace SeleniumTestProject.Tests.Steps
 {
     class FlightSearchSteps : BaseSteps
     {
-        private FlightSearchPage _flightSearchPage;
+        private FlightSearchPage _flightSearchPage => new FlightSearchPage();
 
-        public FlightSearchSteps() : base()
-        {
-            _flightSearchPage = new FlightSearchPage();
-        }
 
         public void AssertFares()
         {
@@ -33,13 +24,13 @@ namespace SeleniumTestProject.Tests.Steps
             FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_category')]")).Click();
 
             //Selecting fare
-            IWebElement fare = FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_button_') and not(@disabled)]"));
-            WaitForVisible(3, fare);
+            var fare = FirstAvailableFare.FindElement(By.XPath(".//*[contains(@data-test-id, 'test_fare_button_') and not(@disabled)]"));
+            fare.WaitForVisible(5);
             fare.Click();
 
             //Proceed to next page
-            IWebElement continueBtn = _flightSearchPage.FlightSearchContainer.FindElement(By.XPath(".//*[@data-test-id='test_button_continue_fsr']"));
-            WaitForVisible(3, continueBtn);
+            var continueBtn = _flightSearchPage.FlightSearchContainer.FindElement(By.XPath(".//*[@data-test-id='test_button_continue_fsr']"));
+            continueBtn.WaitForVisible(5);
 
             continueBtn.Click();
         }

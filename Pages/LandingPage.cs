@@ -1,17 +1,10 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Reflection.Metadata;
 
 namespace SeleniumTestProject.Pages
 {
     class LandingPage : BasePage
     {
-        public LandingPage() : base() { }
-
         [FindsBy(How = How.Id, Using = "onetrust-accept-btn-handler")]
         public IWebElement AcceptCookies { get; private set; }
 
@@ -41,6 +34,5 @@ namespace SeleniumTestProject.Pages
 
         [FindsBy(How = How.XPath, Using = "//*[@data-test-id='test_booker_search']")]
         public IWebElement SearchFlightsButton { get; private set; }
-
     }
 }
