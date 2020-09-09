@@ -1,4 +1,4 @@
-﻿namespace SeleniumTestProject.Tests.Steps
+﻿namespace SeleniumTestProject.Steps
 {
     class PurchaseSteps : BaseSteps
     {

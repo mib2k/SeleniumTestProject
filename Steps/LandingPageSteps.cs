@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 
 
-namespace SeleniumTestProject.Tests.Steps
+namespace SeleniumTestProject.Steps
 {
     class LandingPageSteps : BaseSteps
     {

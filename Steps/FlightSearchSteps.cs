@@ -4,7 +4,7 @@ using SeleniumTestProject.ElementExtensions;
 using SeleniumTestProject.Pages;
 using System.Linq;
 
-namespace SeleniumTestProject.Tests.Steps
+namespace SeleniumTestProject.Steps
 {
     class FlightSearchSteps : BaseSteps
     {

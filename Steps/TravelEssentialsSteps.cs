@@ -1,7 +1,7 @@
 ﻿using SeleniumTestProject.ElementExtensions;
 using SeleniumTestProject.Pages;
 
-namespace SeleniumTestProject.Tests.Steps
+namespace SeleniumTestProject.Steps
 {
     class TravelEssentialsSteps : BaseSteps
     {

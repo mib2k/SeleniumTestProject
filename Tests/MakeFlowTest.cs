@@ -1,9 +1,9 @@
 using NUnit.Framework;
-using SeleniumTestProject.Tests;
-using SeleniumTestProject.Tests.Steps;
+
+using SeleniumTestProject.Steps;
 using System;
 
-namespace SeleniumTestProject
+namespace SeleniumTestProject.Tests
 {
     [TestFixture]
     public class MakeFlowTest : BaseTest

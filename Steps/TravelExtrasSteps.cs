@@ -1,6 +1,6 @@
 ﻿using SeleniumTestProject.ElementExtensions;
 
-namespace SeleniumTestProject.Tests.Steps
+namespace SeleniumTestProject.Steps
 {
     class TravelExtrasSteps : BaseSteps
     {

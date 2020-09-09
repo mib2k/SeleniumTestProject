@@ -1,18 +1,23 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using TechTalk.SpecFlow;
 using static SeleniumTestProject.Utils.WebDriverManager;
 
-namespace SeleniumTestProject.Tests
+namespace SeleniumTestProject.Hooks
 {
-    public class BaseTest
+    [Binding]
+    class Hooks
     {
-        [OneTimeSetUp]
+
+        [BeforeScenario]
         public void Setup()
         {
             Driver.Navigate().GoToUrl("https://www-devk1.aerlingus.com");
         }
 
-        [OneTimeTearDown]
+
+        [AfterScenario]
         public void ShutDown()
         {
             CloseDriver();

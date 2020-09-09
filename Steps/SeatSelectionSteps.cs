@@ -1,7 +1,8 @@
 ﻿using SeleniumTestProject.Pages;
-using SeleniumTestProject.Tests.Steps;
+using SeleniumTestProject.Steps;
 
-namespace SeleniumTestProject.Tests
+namespace SeleniumTestProject.Steps
+
 {
     class SeatSelectionSteps : BaseSteps
     {
