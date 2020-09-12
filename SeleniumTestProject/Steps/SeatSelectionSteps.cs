@@ -1,5 +1,4 @@
 ﻿using SeleniumTestProject.Pages;
-using SeleniumTestProject.Steps;
 
 namespace SeleniumTestProject.Steps
 

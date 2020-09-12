@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
 using System.Collections.Generic;
 
 using static SeleniumTestProject.Utils.WebDriverManager;

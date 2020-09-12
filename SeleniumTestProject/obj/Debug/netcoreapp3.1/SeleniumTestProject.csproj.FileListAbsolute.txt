@@ -113,9 +113,9 @@ D:\2020_August\SeleniumSln\SeleniumTestProject\bin\Debug\netcoreapp3.1\runtimes\
 D:\2020_August\SeleniumSln\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.dll
 D:\2020_August\SeleniumSln\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.pdb
 D:\2020_August\SeleniumSln\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.csprojAssemblyReference.cache
-H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\testhost.exe
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\testhost.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\testhost.exe
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\nunit.engine.dll
@@ -220,7 +220,6 @@ H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.csprojAssemblyReference.cache
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.AssemblyInfoInputs.cache
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.AssemblyInfo.cs
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestProject\obj\Debug\netcoreapp3.1\SeleniumTestProject.csproj.CoreCompileInputs.cache

@@ -1,6 +1,5 @@
 ﻿{
   "stepAssemblies": [
-    { "assembly": "SeleniumTestProject" },
-    { "assembly": "SeleniumTestFeatures" }
+    { "assembly": "SeleniumTestProject" }
   ]
 }

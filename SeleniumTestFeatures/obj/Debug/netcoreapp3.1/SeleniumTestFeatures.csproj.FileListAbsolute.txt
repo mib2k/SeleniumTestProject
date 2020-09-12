@@ -115,9 +115,9 @@ D:\2020_August\SeleniumSln\SeleniumTestFeatures\obj\Debug\netcoreapp3.1\Selenium
 D:\2020_August\SeleniumSln\SeleniumTestFeatures\obj\Debug\netcoreapp3.1\SeleniumTestFeatures.dll
 D:\2020_August\SeleniumSln\SeleniumTestFeatures\obj\Debug\netcoreapp3.1\SeleniumTestFeatures.pdb
 D:\2020_August\SeleniumSln\SeleniumTestFeatures\obj\Debug\netcoreapp3.1\SeleniumTestFeatures.genruntimeconfig.cache
-H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\testhost.exe
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\testhost.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\testhost.exe
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 H:\Stud\С-sharp\testProjects\SeleniumTestProject\SeleniumTestFeatures\bin\Debug\netcoreapp3.1\nunit.engine.dll

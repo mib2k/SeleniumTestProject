@@ -6,6 +6,7 @@ using System;
 namespace SeleniumTestProject.Tests
 {
     [TestFixture]
+    [Parallelizable]
     public class MakeFlowTest : BaseTest
     {
         LandingPageSteps landingSteps;
@@ -29,6 +30,7 @@ namespace SeleniumTestProject.Tests
 
 
         [Test]
+        
         public void SimpleTest()
         {
             landingSteps.AcceptCookiesAndLocation();
@@ -47,7 +49,28 @@ namespace SeleniumTestProject.Tests
             travelEssentialsSteps.ClickContinueBtn();
 
             travelExtrasSteps.ClickContinueBtn();
+        }
 
+        [Test]
+
+        public void SimpleTestParallel()
+        {
+            landingSteps.AcceptCookiesAndLocation();
+            landingSteps.SelectOneWayTrip();
+            landingSteps.SetAirports("DUB", "LHR");
+            landingSteps.SetDates(DateTime.Now.AddDays(3));
+
+            landingSteps.Search();
+
+            flightSearchSteps.AssertFares();
+            flightSearchSteps.SelectFare();
+
+            paxInfo.FillPaxInfo();
+
+            seatSelectionSteps.SkipSeatSelection();
+            travelEssentialsSteps.ClickContinueBtn();
+
+            travelExtrasSteps.ClickContinueBtn();
         }
     }
 }

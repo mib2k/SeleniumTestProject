@@ -24,12 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Main booking flow.feature.cs">
-      <DesignTime>True</DesignTime>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>

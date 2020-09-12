@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium;
 using static SeleniumTestProject.Utils.WebDriverManager;
 
 namespace SeleniumTestProject.Tests
