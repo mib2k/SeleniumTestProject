@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Mycroft\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Mycroft\\.nuget\\packages"
+    ]
+  }
+}
