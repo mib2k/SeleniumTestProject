@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewSelenium", "MainProject\NewSelenium.csproj", "{5ACA57D1-51C9-4608-B401-DC677420BEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeaturesProject", "FaeturesProject\NUnitTestProject1\FeaturesProject.csproj", "{7B2333E5-3DDE-456F-BCAD-B0CD30DFE79E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ACA57D1-51C9-4608-B401-DC677420BEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACA57D1-51C9-4608-B401-DC677420BEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACA57D1-51C9-4608-B401-DC677420BEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACA57D1-51C9-4608-B401-DC677420BEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2333E5-3DDE-456F-BCAD-B0CD30DFE79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2333E5-3DDE-456F-BCAD-B0CD30DFE79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2333E5-3DDE-456F-BCAD-B0CD30DFE79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2333E5-3DDE-456F-BCAD-B0CD30DFE79E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2160624C-360A-482E-996D-9349A860F179}
+	EndGlobalSection
+EndGlobal
